@@ -30,17 +30,6 @@ def find_string(text, string, start, stop=False):
 
     return found
 
-##def find_all(string, text, start):
-##    list_found = []
-##    a = text.find(string, start)
-##    if a == -1:
-##        return [-1]
-##    else:
-##        list_found.append(find_all(string, text, a+1)+a+1)
-##    list_found.append(a)
-##    print(start, list_found)
-##    return list_found
-
 def collect_entries(text, servery):
     entries = ""
     start_place = text.find('<div class="servery-title" id="'+servery+'">', 0)
